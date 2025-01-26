@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* overflow-y: hidden; */
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 1000px;
+}
+.conteudo{
+    margin-top: 20px;
+    justify-content: center;
+    height: 76.4%;   
+}
+.imagem{
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    height: 250px;
+}
+.links{
+    display: flex;
+    gap: 20px;
+    font-size: 33px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    margin-top: -350px;
+}
+button{
+    height: 70px;
+    width: 500px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(32, 31, 31);
+    border: none;
+    color: white;
+}
+.sobre-eu{
+    text-align: center;
+    margin-top: 100px;
+    width: 35%;
+}
+.sobre-eu p{
+    color: rgb(255, 255, 255);
+    margin: 6px 0;
+}
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    button {
+        height: 50px;
+        width: 90%; /* Ocupa 90% da largura da tela */
+        
+    }
+    .container{
+       overflow-y: hidden;
+    }
+}
+
+/* Ajustes para telas ainda menores (por exemplo, dispositivos móveis) */
+@media (max-width: 480px) {
+    button {
+        height: 60px;
+        width: 300px; /* Ocupa 90% da largura da tela */
+    }
+    .sobre-eu{
+        width: 340px;
+        /* margin: 10px 0; */
+        margin-top: 62px;
+    }
+    .container{
+        overflow-x: hidden;
+     }
+    
+}
